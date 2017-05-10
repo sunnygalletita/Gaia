@@ -1,0 +1,505 @@
+//META{"name":"Gaia","description":"A transparent theme with altered elements.","author":"Gimo","version":"1"}*//
+.app{ background: url("https://i.imgur.com/OXncnhS.jpg");
+background-size: cover;}
+.layers, .layer { background: transparent !important; }
+/* misc */
+.message-group .avatar-large{
+ border-radius: 10px; 
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+.scroller-wrap .scroller::-webkit-scrollbar, .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+   background: rgba(0,0,0,.3) !important;
+   border-radius: 0;
+    border: 0 ;
+}
+ 
+.scroller-wrap .scroller::-webkit-scrollbar-track {
+    background: rgba(0,0,0,.1) !important;
+    border-radius: 0;
+    
+}
+ 
+.scroller-wrap .scroller::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,.6) !important;
+    border-radius: 0;
+    border: 0;
+}
+
+
+/* account */
+.account .avatar-small{
+    border-radius: 0 40% 40% 0;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    float: left;
+    opacity: .5;
+    position: relative;
+    left: -7px;
+    padding: 17px;
+    float: left;
+}
+.account{
+padding-left: 0;  
+    overflow: hidden;
+}
+.account .account-details{
+ padding-left: 0;
+    margin-left: -3px;
+}
+.account .status{
+ position: absolute;
+    left: -38px;
+    height: 100%;
+    top: 0;
+    border: 0;
+    opacity: 1;
+    padding: 20px;
+    border-radius: 0;
+}
+.status-text,
+.helper,
+.popout-menu .popout-menu-separator,
+.status-picker .popout-menu-item .status-icon-text,
+.theme-dark .channel-members-loading .member,
+.theme-dark .channel-members-loading .background,
+.theme-dark .channel-members-loading .heading,
+.search-popout .option:after,
+.theme-dark .search-results-wrap .search-result:after,
+.theme-dark .search-results-wrap .search-result:before,
+.theme-dark .search-results-wrap .channel-separator:before{
+ display: none;   
+}
+/* popout */
+.popout{
+ box-shadow: none;
+    text-align: center;
+}
+.popout.popout-bottom, .popout.popout-bottom-right{
+ top: 42px !important;   
+}
+.popout-menu .popout-menu-item .popout-menu-icon{
+    margin-right: 7px;
+    margin-left: 7px;
+}
+.popout-menu{
+ background: transparent;
+   border-radius: 0;
+    padding: 0px;
+    width: 240px;
+    background-color: rgb(50,50,50);
+}
+.popout.popout-top, .popout.popout-top-right{
+ margin-top: 4px;   
+}
+.status-picker .popout-menu-item{
+ display: inline-block;
+    width: 25%;
+    height: 30px;
+}
+.status-picker .popout-menu-item:nth-of-type(1){
+ background-color: #43b581;
+    background-image: url("https://i.imgur.com/aSrallN.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.status-picker .popout-menu-item:nth-of-type(3){
+ background-color: #faa61a;   
+    background-image: url("https://i.imgur.com/aRLIO1s.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.status-picker .popout-menu-item:nth-of-type(4){
+ background-color: #f04747;   
+    background-image: url("https://i.imgur.com/ePsaFEf.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.status-picker .popout-menu-item:nth-of-type(5){
+ background-color: #747f8d;   
+    background-image: url("https://i.imgur.com/gxJLFK6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.status-picker .popout-menu-item:hover{
+    box-shadow: inset 0 0 0 100px rgba(0,0,0,.3);
+}
+.popout-menu .popout-menu-item-label{
+ display: none;   
+}
+.popout-menu .popout-menu-item{
+ width: 25%;
+    display: inline-block;
+    background: rgb(50,50,50);
+    margin: auto 0;
+}
+/* guild-wrapper */
+.guilds-wrapper .guilds .guild{
+ border: 2px solid white;
+    border-radius: 100%;
+    padding: 3px;
+}
+.guilds-wrapper .guilds .guild.unread{
+ border-color: black;   
+}
+.guilds-wrapper{
+ padding-right: 20px;
+}
+.guilds-wrapper .guilds::-webkit-scrollbar{
+ display: none;   
+}
+.guilds-wrapper .guilds .guild .guild-inner,
+.guilds-wrapper .guilds .guild .guild-inner a{
+ border-radius: 100% !important;
+}
+.guilds-wrapper .guilds .guild .guild-inner a:hover{
+    box-shadow: inset 1px 0 10px 5px rgba(0,0,0,.3) !important;
+}
+.guilds-wrapper .guilds .guild.unread::before{
+ display: none;   
+}
+.badge{
+max-width: 14px;
+max-height: 14px;
+border-radius: 100%;
+text-align: center;
+    color: black;
+    background: white;
+}
+/* transparent shit */
+.theme-dark .chat>.content, 
+.theme-dark .friends-table,
+.theme-dark .chat form .typing,
+.form .form-header,
+.form .form-inner,
+#instant-invite-modal .form-actions,
+.theme-dark .message-group .comment .markup pre,
+#user-profile-modal .avatar-wrapper,
+.bda-dark #bda-qem,
+.theme-dark .ui-standard-sidebar-view{
+ background: transparent;   
+}
+.theme-dark .messages-wrapper,
+.theme-dark .chat,
+.account, 
+.channels-wrap,
+.guild-header header,
+.theme-dark .channel-textarea-autocomplete-inner ul li.active,
+.bda-dark #bda-qem button,
+.theme-dark .message-group .comment .markup .mention,
+.popout section,
+.upload-modal
+{
+ background: rgba(0,0,0,.3);   
+}
+.theme-dark .channel-members,
+.guilds-wrapper,
+.guild-channels,
+.guild-channels .channel-text.selected,
+.account .btn-deafen,
+.account .btn-mute,
+.account .btn,
+.guild-channels .channel-text:hover,
+.guild-header header:hover,
+.guild-header.popout-open header,
+.theme-dark .invite-button,
+.instant-invite-modal,
+.chat .new-messages-bar,
+.user-popout .body,
+.note textarea:focus,
+.theme-dark .message-group .comment .markup code.inline,
+.theme-dark .message-group .comment .markup pre code,
+.theme-dark .channel-textarea-inner,
+#user-profile-modal .header,
+#user-profile-modal .header:after,
+#user-profile-modal .tab-bar-container,
+#user-profile-modal .scroller,
+.markdown-modal,
+.theme-dark .channel-textarea-autocomplete-inner,
+.theme-dark .channel-textarea-autocomplete-inner header,
+.bda-dark .emoji-picker,
+.bda-dark #bda-qem-favourite-container,
+.bda-dark #bda-qem-twitch-container,
+.bda-dark .emoji-picker .header .search-bar,
+.bda-dark #bda-qem button:hover,
+.bda-dark #bda-qem button.active,
+.private-channels,
+.search-bar,
+.theme-dark #friends,
+.theme-dark #friends .friends-header,
+.private-channels .channel:hover,
+.private-channels .channel.selected,
+.theme-dark #friends .friends-header 
+.tab-bar .tab-bar-item.tab-bar-item-primary,
+.theme-dark #friends .friends-table .friends-row:hover,
+.theme-dark .search-answer,
+.theme-dark .search-filter,
+.search-popout,
+.search-popout .option.selected,
+.theme-dark .search-results-wrap .search-header,
+.theme-dark .search-results-wrap,
+.theme-dark .search-results-wrap .channel-separator .channel-name,
+.theme-dark .ui-standard-sidebar-view .sidebar-region,
+.theme-dark .ui-card-primary,
+.ui-standard-sidebar-view .bda-slist li,
+.ui-standard-sidebar-view .bda-slist .bda-right button,
+.deprecated-settings-modal .settings-inner,
+.deprecated-settings-modal .settings-actions,
+.radio .radio-inner span:after,
+.form .form-header,
+.form .form-inner,
+.form .form-actions,
+.theme-dark .themed-popout,
+.theme-dark .themed-popout .header,
+.theme-dark .messages-popout-wrap .messages-popout .message-group,
+.theme-dark .message-group .comment .markup .mention:hover,
+#rtc-connection,
+#rtc-connection .btn,
+#instant-invite-modal .copy,
+.popout header,
+.deprecated-settings-modal .settings-header,
+#rtc-debug-modal #users-section .user-list li:hover,
+.theme-dark.context-menu,
+.theme-dark.context-menu .item:hover,
+.theme-dark.context-menu .item-subMenu,
+.theme-dark.context-menu .context-menu,
+.checkbox .checkbox-inner input[type=checkbox]:checked+span,
+.need-help-modal .header,
+.need-help-modal .footer,
+.theme-dark .channel-members .member:not(.disabled).popout-open,
+.theme-dark .channel-members .member:not(.disabled):hover,
+.quickswitcher.dark,
+.keybind-shortcut.dark span,
+.slider-bar-fill,
+.upload-modal .footer,
+.upload-modal .footer .button
+{
+ background: rgba(0,0,0,.7);   
+}
+/* misc */
+.guild-channels .channel-text.selected:before,
+.guild-channels .channel-text:hover.channel-muted:before,
+.guild-channels .channel-text:hover:not(.unread):before,
+.private-channels .channel.selected:before,
+.private-channels .channel:hover:before{
+ border-color: white;   
+}
+.chat .new-messages-bar button:last-child,
+.note textarea,
+.user-popout .body .section .label,
+.upload-modal .footer .button-primary{
+ color: white   
+}
+.chat .new-messages-bar:hover{
+ background: black;   
+}
+.theme-dark .channel-members h2{
+ color: white;
+    text-align: center;
+    background: rgba(0,0,0,.5);
+    padding: 10px
+}
+.theme-dark .friends-table .messages .divider.divider-red>span,
+.theme-dark .messages-wrapper .messages .divider.divider-red>span,
+.theme-dark .friends-table .messages .divider:before, .theme-dark .friends-table .messages .divider span, .theme-dark .messages-wrapper .messages .divider:before,
+.theme-dark .messages-wrapper .messages .divider span{
+ color: white;
+     background: black;
+}
+.theme-dark .friends-table .messages .divider.divider-red>div,
+.theme-dark .messages-wrapper .messages .divider.divider-red>div,
+.theme-dark .friends-table .messages .divider:not(.red) div,
+.theme-dark .messages-wrapper .messages .divider:not(.red) div{
+ background: white;   
+}
+.theme-dark .channel-members-loading{
+ background-color: rgba(0,0,0,.9);
+    background-image: url("https://i.imgur.com/Y7ai9WP.gif");
+        background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.user-popout .header,
+.user-popout .footer{
+ background: rgba(0,0,0,.9);
+    border: none;
+}
+.user-popout .body .section .label .icon{
+ display: none;
+}
+.user-popout .body .section .label{
+ padding-left: 5px;
+}
+.user-popout .avatar-wrapper .avatar-popout,
+.tab-bar.SIDE .tab-bar-item:before,
+#rtc-debug-modal #users-section .user-list li:hover:before{
+ border-color: white;   
+}
+.bda-dark .emoji-picker .category,
+.theme-dark #friends .friends-header .tab-bar 
+.tab-bar-item.tab-bar-item-primary:hover:not(.selected),
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.selected .badge{
+ background: black;
+    color: white;
+}
+.guilds-wrapper .guilds .guild .guild-inner{
+ background: #444 !important;   
+}
+.theme-dark #friends .friends-table .friends-row
+.friends-column-actions .friends-action{
+ background-color: rgba(0,0,0,.5);   
+}
+.theme-dark .search-results-wrap .search-result .hit{
+ box-shadow: none;
+    background: rgba(0,0,0,.6);
+    border-color: transparent !important;
+}
+.theme-dark .search-results-wrap .channel-separator .channel-name{
+ padding: 10px; 
+}
+.search-results-wrap .channel-separator{
+ text-align: center;   
+}
+.theme-dark .ui-standard-sidebar-view .content-region{
+ background: rgba(0,0,0,.5);   
+}
+.ui-tab-bar.SIDE .ui-tab-bar-item.selected,
+.ui-tab-bar.SIDE .ui-tab-bar-item:active,
+.ui-button.brand.filled,
+.theme-dark .ui-card-primary.editable,
+.tooltip{
+color: black;
+    background: rgba(255,255,255,.8);
+}
+.ui-button.brand.filled:hover,
+{
+ background: white;   
+}
+.ui-tab-bar.SIDE .ui-tab-bar-item.brand.selected{
+ color: black;   
+}
+.theme-dark .ui-card-primary.editable.checked,
+.ui-switch-checkbox:checked+.ui-switch{
+ background: rgb(40,40,40) !important;
+    border-color: white !important;
+}
+.ui-standard-sidebar-view .bda-slist li:nth-child(odd){
+ background: rgba(0,0,0,.5);   
+}
+.tooltip.tooltip-top:after{
+ border-top-color:  rgba(255,255,255,.8);
+}
+.tooltip.tooltip-right:after{
+ border-right-color: rgba(255,255,255,.8);   
+}
+.tooltip.tooltip-left:after{
+ border-left-color: rgba(255,255,255,.8);   
+}
+.tooltip.tooltip-bottom:after{
+ border-bottom-color: rgba(255,255,255,.8);   
+}
+.form .form-header,
+#instant-invite-modal .form-header header,
+#instant-invite-modal .blurb,
+#instant-invite-modal .expire-text,
+.checkbox span,
+.radio span,
+.radio,
+.form .control-group label a,
+.form header,
+#user-profile-modal .header .header-info 
+.header-info-inner .discord-tag,
+#user-profile-modal .header .header-info 
+.header-info-inner .discord-tag .discriminator{
+ color: white;   
+}
+.form .control-group label a:hover{
+ color: rgb(200,200,200);   
+}
+.form .control-group input[type=email]:focus,
+.form .control-group input[type=number]:focus,
+.form .control-group input[type=password]:focus,
+.form .control-group input[type=text]:focus,
+.form .control-group textarea:focus{
+ border-color: rgba(0,0,0,.5);   
+}
+.selected .guild-inner{
+ box-shadow: inset 0 0 20px 20px black;   
+}
+.theme-dark .message-group .comment .markup .mention{
+ color: white;   
+}
+.guilds-wrapper .guilds .guild.audio .guild-inner:after{
+ background-color: rgba(0,0,0,.5);;   
+}
+#instant-invite-modal .clipboard-input-inner input{
+ color: black;   
+}
+.popout.popout-top-right section:before,
+.popout.popout-top section:before,
+.popout.popout-top-right section:after,
+.popout.popout-top section:after{
+border-top-color: rgba(0,0,0,.3);    
+}
+.guild-channels .channel-voice .channel-arrow{
+ transition: all 300ms;   
+}
+.guild-channels .channel-voice .channel-arrow:hover{
+ background-color: transparent;
+ transform: rotate(0deg)   
+}
+.checkbox .checkbox-inner input[type=checkbox]:checked+span{
+ border-color: rgba(0,0,0,.3);   
+}
+.need-help-modal .header input[type=text]{
+ box-shadow: 0 2px rgba(255,255,255,.5);   
+}
+.need-help-modal a{
+ color: white;   
+}
+.need-help-modal a:hover{
+ color: rgb(180,180,180);   
+}
+.guild.selected .guild-inner a{
+    box-shadow: inset 0 0 20px 5px rgba(0,0,0,.8);
+}
+.quickswitcher.dark .result.selected{
+ background: rgba(255,255,255,.5);   
+}
+.keybind-shortcut.dark span{
+ box-shadow: inset 0 -4px black;   
+}
+.upload-modal .inner{
+ border-color: white;   
+}
+/* btns */
+.account .btn-deafen, .account .btn-settings{
+ box-shadow: none;   
+}
+.upload-modal .footer .button{
+ border: 1px solid white;   
+}
+.form .btn-primary{
+ background: rgba(0,0,0,.5);
+    border: 1px solid white;
+}
+.form .btn-primary:hover,
+.theme-dark .chat .has-more button{
+ background: rgba(255,255,255,.5);
+    color: black;
+}
+.form .btn-default{
+ background: transparent;
+    color: white;
+}
+.guilds-wrapper .guilds #bd-pub-li{
+    border: 0 solid black;
+}
+.guilds-wrapper .guilds #bd-pub-li .guild-inner{
+    border-radius: 5px !important;
+}
