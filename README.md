@@ -1,2 +1,2 @@
 # Gaia
-I hope I don't have to explain how to install this.
+![Gaia](https://github.com/GimoTheBeast/Gaia/blob/master/Gaia.PNG?raw=true)
