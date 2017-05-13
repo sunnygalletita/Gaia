@@ -1,4 +1,4 @@
-//META{"name":"Gaia","description":"A transparent theme with altered elements.","author":"Gimo","version":"1"}*//
+//META{"name":"Gaia","description":"A transparent theme with altered elements.","author":"Gimo","version":"1.2"}*//
 .app{ background: url("https://i.imgur.com/OXncnhS.jpg");
 background-size: cover;}
 .layers, .layer { background: transparent !important; }
@@ -277,7 +277,8 @@ text-align: center;
 .keybind-shortcut.dark span,
 .slider-bar-fill,
 .upload-modal .footer,
-.upload-modal .footer .button
+.upload-modal .footer .button,
+.chat .jump-to-present-bar button:first-child
 {
  background: rgba(0,0,0,.7);   
 }
@@ -477,10 +478,6 @@ border-top-color: rgba(0,0,0,.3);
 .upload-modal .inner{
  border-color: white;   
 }
-.chat .divider+.divider{
- display: none;   
-}
-
 /* btns */
 .account .btn-deafen, .account .btn-settings{
  box-shadow: none;   
@@ -508,6 +505,10 @@ border-top-color: rgba(0,0,0,.3);
     border-radius: 5px !important;
 }
 /* settings icons */
+.chat .divider+.divider{
+ display: none;   
+}
+
 .ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(2){
  background-image: url("https://i.imgur.com/ifHq1MZ.png");
   	background-size: 30px;
