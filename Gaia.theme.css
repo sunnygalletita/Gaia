@@ -77,7 +77,7 @@ padding-left: 0;
  box-shadow: none;
     text-align: center;
 }
-.popout.popout-bottom, .popout.popout-bottom-right{
+.popout.popout-bottom:not(.no-arrow), .popout.popout-bottom-right{
  top: 42px !important;   
 }
 .popout-menu .popout-menu-item .popout-menu-icon{
