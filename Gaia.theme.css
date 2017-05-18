@@ -478,6 +478,13 @@ border-top-color: rgba(0,0,0,.3);
 .upload-modal .inner{
  border-color: white;   
 }
+.emoji-picker .scroller .emoji-item.selected {
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    -webkit-background-size: contain !important;
+    -moz-background-size: contain !important;
+    background-size: contain !important;
+}
 /* btns */
 .account .btn-deafen, .account .btn-settings{
  box-shadow: none;   
