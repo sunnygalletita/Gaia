@@ -494,6 +494,17 @@ border-top-color: rgba(0,0,0,.3);
     -moz-background-size: contain !important;
     background-size: contain !important;
 }
+.account .account-details{
+display: flex;
+    margin-top: -40px
+}
+.account .account-details .username{
+ max-width: 120px   
+}
+.account .btn-group{
+ margin-top: 20px;
+ margin-left: -300px;
+}
 /* btns */
 .account .btn-deafen, .account .btn-settings{
  box-shadow: none;   
