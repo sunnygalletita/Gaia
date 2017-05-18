@@ -419,6 +419,15 @@ color: black;
 .header-info-inner .discord-tag .discriminator{
  color: white;   
 }
+.small-popout-box{
+	border: none;
+}
+.option-popout .btn-item{
+	color: #ccc;
+}
+.option-popout .btn-item:hover{
+	color: white;
+}
 .form .control-group label a:hover{
  color: rgb(200,200,200);   
 }
