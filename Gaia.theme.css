@@ -524,6 +524,11 @@ display: flex;
 .channel-textarea-autocomplete-inner ul li{
  color: white;   
 }
+.theme-dark .channel-members .avatar-small .status,
+.theme-dark .channel-members .member.popout-open .status,
+.theme-dark .channel-members .member:hover .status{
+ border-color: white;   
+}
 /* btns */
 .account .btn-deafen, .account .btn-settings{
  box-shadow: none;   
