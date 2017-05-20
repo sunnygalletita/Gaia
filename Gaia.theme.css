@@ -1,4 +1,4 @@
-//META{"name":"Gaia","description":"A transparent theme with altered elements.","author":"Gimo","version":"1.3"}*//
+//META{"name":"Gaia","description":"A transparent theme with altered elements.","author":"Gimo","version":"1"}*//
 .app{ background: url("https://i.imgur.com/OXncnhS.jpg");
 background-size: cover;}
 .layers, .layer { background: transparent !important; }
@@ -81,8 +81,8 @@ padding-left: 0;
  top: 42px !important;   
 }
 .popout-menu .popout-menu-item .popout-menu-icon{
-    margin-right: 7px;
-    margin-left: 7px;
+    margin-right: 2px;
+    margin-left: 0;
 }
 .popout-menu{
  background: transparent;
@@ -133,7 +133,7 @@ padding-left: 0;
  display: none;   
 }
 .popout-menu .popout-menu-item{
- width: 25%;
+ width: 20%;
     display: inline-block;
     background: rgb(50,50,50);
     margin: auto 0;
@@ -278,7 +278,8 @@ text-align: center;
 .slider-bar-fill,
 .upload-modal .footer,
 .upload-modal .footer .button,
-.chat .jump-to-present-bar button:first-child
+.chat .jump-to-present-bar button:first-child,
+.small-popout-box
 {
  background: rgba(0,0,0,.7);   
 }
@@ -293,7 +294,8 @@ text-align: center;
 .chat .new-messages-bar button:last-child,
 .note textarea,
 .user-popout .body .section .label,
-.upload-modal .footer .button-primary{
+.upload-modal .footer .button-primary,
+.modal-content .form-inner p{
  color: white   
 }
 .chat .new-messages-bar:hover{
@@ -505,6 +507,23 @@ display: flex;
  margin-top: 20px;
  margin-left: -300px;
 }
+.upload-drop-modal .bgScale{
+ background: rgba(0,0,0,.5);   
+}
+.upload-modal .inner .file .icon.image,
+.channel-textarea-autocomplete-inner{
+ border-color: white;   
+}
+.channel-textarea-autocomplete-inner{
+ background: black;   
+}
+.channel-textarea-autocomplete-inner ul li.active,
+.channel-textarea-autocomplete-inner header{
+ background-color: rgba(255,255,255,.3);   
+}
+.channel-textarea-autocomplete-inner ul li{
+ color: white;   
+}
 /* btns */
 .account .btn-deafen, .account .btn-settings{
  box-shadow: none;   
@@ -531,6 +550,7 @@ display: flex;
 .guilds-wrapper .guilds #bd-pub-li .guild-inner{
     border-radius: 5px !important;
 }
+
 /* settings icons */
 .chat .divider+.divider{
  display: none;   
