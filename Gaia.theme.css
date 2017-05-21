@@ -181,7 +181,11 @@ text-align: center;
 .theme-dark .message-group .comment .markup pre,
 #user-profile-modal .avatar-wrapper,
 .bda-dark #bda-qem,
-.theme-dark .ui-standard-sidebar-view{
+.theme-dark .ui-standard-sidebar-view,
+.theme-dark .friends-table .messages .message-group-blocked.revealed,
+.theme-dark .messages-wrapper .messages .message-group-blocked.revealed,
+.theme-dark .friends-table .messages .message-group-blocked,
+.theme-dark .messages-wrapper .messages .message-group-blocked{
  background: transparent;   
 }
 .theme-dark .messages-wrapper,
@@ -193,7 +197,10 @@ text-align: center;
 .bda-dark #bda-qem button,
 .theme-dark .message-group .comment .markup .mention,
 .popout section,
-.upload-modal
+.upload-modal,
+.theme-dark .friends-table .messages .message-group-blocked .message-group-blocked-btn,
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn
+
 {
  background: rgba(0,0,0,.3);   
 }
@@ -279,7 +286,10 @@ text-align: center;
 .upload-modal .footer,
 .upload-modal .footer .button,
 .chat .jump-to-present-bar button:first-child,
-.small-popout-box
+.small-popout-box,
+.theme-dark .friends-table .messages .message-group-blocked .message-group-blocked-btn:hover, 
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn:hover
+
 {
  background: rgba(0,0,0,.7);   
 }
