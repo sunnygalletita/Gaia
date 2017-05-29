@@ -288,8 +288,8 @@ text-align: center;
 .chat .jump-to-present-bar button:first-child,
 .small-popout-box,
 .theme-dark .friends-table .messages .message-group-blocked .message-group-blocked-btn:hover, 
-.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn:hover
-
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn:hover,
+.theme-dark .channel-textarea-guard .countdown-number
 {
  background: rgba(0,0,0,.7);   
 }
