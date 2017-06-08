@@ -1,6 +1,8 @@
-//META{"name":"Gaia","description":"A transparent theme with altered elements.","author":"Gimo","version":"1"}*//
-.app{ background: url("https://i.imgur.com/OXncnhS.jpg");
-background-size: cover;}
+//META{"name":"Gaia","description":"A transparent theme with altered elements.","author":"Gimo","version":"1.5"}*//
+.app{
+	background: url("https://i.imgur.com/OXncnhS.jpg");
+	background-size: cover;
+}
 .layers, .layer { background: transparent !important; }
 /* misc */
 .message-group .avatar-large{
@@ -29,17 +31,12 @@ background-size: cover;}
 
 
 /* account */
-.account .avatar-small{
-    border-radius: 0 40% 40% 0;
-    width: 50px;
-    height: 50px;
+.container-iksrDt .avatar-small{
+ width: 40px;
+    height: 40px;
+  border-radius: 5px;
     background-size: cover;
-    float: left;
-    opacity: .5;
-    position: relative;
-    left: -7px;
-    padding: 17px;
-    float: left;
+    background-color: rgba(0,0,0,.2);
 }
 .account{
 padding-left: 0;  
@@ -185,7 +182,11 @@ text-align: center;
 .theme-dark .friends-table .messages .message-group-blocked.revealed,
 .theme-dark .messages-wrapper .messages .message-group-blocked.revealed,
 .theme-dark .friends-table .messages .message-group-blocked,
-.theme-dark .messages-wrapper .messages .message-group-blocked{
+.theme-dark .messages-wrapper .messages .message-group-blocked,
+.theme-dark .chat .jump-to-present-bar,
+.popout-menu .popout-menu-item,
+.private-channels .channel.selected a
+{
  background: transparent;   
 }
 .theme-dark .messages-wrapper,
@@ -199,8 +200,12 @@ text-align: center;
 .popout section,
 .upload-modal,
 .theme-dark .friends-table .messages .message-group-blocked .message-group-blocked-btn,
-.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn
-
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn,
+.theme-dark .chat .jump-to-present-bar:hover,
+.contentSelectedText-3j5CXt,
+.contentHoveredText-2HYGIY, 
+.contentHoveredVoice-3qGNKh:active, 
+.contentSelectedVoice-gTtYM9:active
 {
  background: rgba(0,0,0,.3);   
 }
@@ -287,9 +292,13 @@ text-align: center;
 .upload-modal .footer .button,
 .chat .jump-to-present-bar button:first-child,
 .small-popout-box,
-.theme-dark .friends-table .messages .message-group-blocked .message-group-blocked-btn:hover, 
+.theme-dark .friends-table .messages .message-group-blocked .message-group-blocked-btn:hover,
 .theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn:hover,
-.theme-dark .channel-textarea-guard .countdown-number
+.chat .jump-to-present-bar button:last-child,
+.theme-dark .channel-textarea-guard .countdown-number,
+.container-RYiLUQ,
+.popout-menu,
+.wrapper-2ldvyE
 {
  background: rgba(0,0,0,.7);   
 }
@@ -431,6 +440,15 @@ color: black;
 .header-info-inner .discord-tag .discriminator{
  color: white;   
 }
+.edit-container-outer .avatar-large{
+ display: none;   
+}
+.edit-container-outer{
+ padding-left: 60px;   
+}
+.message-group .edit-message .channel-textarea-inner{
+ border-color: gray;   
+}
 .small-popout-box{
 	border: none;
 }
@@ -477,6 +495,9 @@ border-top-color: rgba(0,0,0,.3);
 }
 .checkbox .checkbox-inner input[type=checkbox]:checked+span{
  border-color: rgba(0,0,0,.3);   
+}
+.chat .divider+.divider{
+ display: none;   
 }
 .need-help-modal .header input[type=text]{
  box-shadow: 0 2px rgba(255,255,255,.5);   
@@ -539,40 +560,6 @@ display: flex;
 .theme-dark .channel-members .member:hover .status{
  border-color: white;   
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker,
-.theme-light .ui-calendar-picker .react-datepicker,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__header,
-.theme-light .ui-calendar-picker .react-datepicker__header{
-    background: rgba(0,0,0,.8);
-    color: white;
-}
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--disabled,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--outside-month,
-.theme-light .ui-calendar-picker .react-datepicker__day--disabled,
-.theme-light .ui-calendar-picker .react-datepicker__day--outside-month{
- background: rgba(255,255,255,.3);  
-    color: white;
-}
-.theme-dark .ui-calendar-picker .react-datepicker__day.react-datepicker__day--selected:after{
- background-color: white !important;   
-}
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--selected:hover,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day:hover,
-.theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--selected:hover,
-.theme-light .ui-calendar-picker .react-datepicker__day:hover{
- background: rgba(255,255,255,.5);
-    color: black;
-}
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day,
-.theme-light .ui-calendar-picker .react-datepicker__day{
-    color: white;
-}
-.search-popout .date-picker .date-picker-hint .hint-value{
- background: rgb(30,30,30);   
-}
-.search-popout .date-picker .date-picker-hint .hint-value:hover{
- background: black;   
-}
 /* btns */
 .account .btn-deafen, .account .btn-settings{
  box-shadow: none;   
@@ -598,155 +585,4 @@ display: flex;
 }
 .guilds-wrapper .guilds #bd-pub-li .guild-inner{
     border-radius: 5px !important;
-}
-
-/* settings icons */
-.chat .divider+.divider{
- display: none;   
-}
-
-.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(2){
- background-image: url("https://i.imgur.com/ifHq1MZ.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}
-.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(3){
- background-image: url("https://i.imgur.com/Zx3XPb0.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}
-.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(4){
- background-image: url("https://i.imgur.com/aSaRiDT.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}
-.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(5){
- background-image: url("https://i.imgur.com/WKRLgEs.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}
-.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(7){
- background-image: url("https://i.imgur.com/W4ZMb5g.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}
-.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(10){
- background-image: url("https://i.imgur.com/8EAjxm8.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}
-.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(11){
- background-image: url("https://i.imgur.com/omLESpH.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}
-.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(12){
- background-image: url("https://i.imgur.com/4lmUn1o.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}
-.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(13){
- background-image: url("https://i.imgur.com/HWvmWIP.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}
-.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(14){
- background-image: url("https://i.imgur.com/mEtvy4u.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(15){
- background-image: url("https://i.imgur.com/hrGxAZ9.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(16){
- background-image: url("https://i.imgur.com/5sOV5F9.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}
-.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(17){
- background-image: url("https://i.imgur.com/ffuVP66.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}
-.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(18){
- background-image: url("https://i.imgur.com/2G5lpdS.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}
-.ui-tab-bar.SIDE #bd-settings-sidebar .ui-tab-bar-item:nth-of-type(3){
-   background-image: url("https://i.imgur.com/uFzI5xI.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;  
-}
-.ui-tab-bar.SIDE #bd-settings-sidebar .ui-tab-bar-item:nth-of-type(4){
-   background-image: url("https://i.imgur.com/rL9skHD.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;  
-}
-.ui-tab-bar.SIDE #bd-settings-sidebar .ui-tab-bar-item:nth-of-type(5){
-   background-image: url("https://i.imgur.com/Baao166.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;  
-}
-.ui-tab-bar.SIDE #bd-settings-sidebar .ui-tab-bar-item:nth-of-type(6){
-   background-image: url("https://i.imgur.com/X5VBM00.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;  
-}
-.ui-tab-bar.SIDE #bd-settings-sidebar .ui-tab-bar-item:nth-of-type(7){
-   background-image: url("https://i.imgur.com/pa3ktK8.pngg");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;  
-}
-.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(20){
- background-image: url("https://i.imgur.com/XOwvOEx.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
-}
-.ui-tab-bar.SIDE .ui-tab-bar-item:nth-of-type(22){
- background-image: url("https://i.imgur.com/6ssXkrX.png");
-  	background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 3px center;
-    padding-left: 40px;
 }
