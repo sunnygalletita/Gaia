@@ -91,6 +91,9 @@ padding-left: 0;
 .popout.popout-top, .popout.popout-top-right{
  margin-top: 4px;   
 }
+.status-picker{
+ margin-bottom: 4px;
+}
 .status-picker .popout-menu-item{
  display: inline-block;
     width: 25%;
@@ -303,9 +306,15 @@ text-align: center;
 .theme-dark .channel-textarea-guard .countdown-number,
 .container-RYiLUQ,
 .popout-menu,
-.wrapper-2ldvyE
+.wrapper-2ldvyE,
+#bd-settings-sidebar .ui-tab-bar-item.selected,
+.itemDefaultSelected-1UAWLe
 {
  background: rgba(0,0,0,.7);   
+}
+.private-channel-call,
+.ui-video{
+ background: rgba(0,0,0,.5) !important;   
 }
 /* misc */
 .guild-channels .channel-text.selected:before,
@@ -315,6 +324,14 @@ text-align: center;
 .private-channels .channel:hover:before{
  border-color: white;   
 }
+.channel-text-area-default [class*="inner-"],  /* The chat bar */
+.channel-text-area-default [class*="autocomplete-"], /* Auto complete wrapper */
+.channel-text-area-default [class*="autocompleteInner-"], /* Auto complete container */
+.channel-text-area-default [class*="selectorSelected-"] { /* Selected item in auto complete */
+    background-color: rgba(0,0,0,.6); }
+.channel-text-area-default [class*="textArea-"], /* Text in chat bar */
+.channel-text-area-default [class*="selector-"] [class*="marginLeft8-"] { /* User names in auto complete */
+    color: white; }
 .chat .new-messages-bar button:last-child,
 .note textarea,
 .user-popout .body .section .label,
