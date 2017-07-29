@@ -405,6 +405,19 @@ background: rgba(255,255,255,.1);
 #user-profile-modal .tab-bar .tab-bar-item.selected{
  opacity: 1;   
 }
+/* autocomplete in modal */
+.theme-brand .inner-3if5cm,
+.theme-brand .autocomplete-1TnWNR{
+ background: rgba(0,0,0,.5);   
+}
+.theme-brand .autocomplete-1TnWNR *{
+ color: white;   
+}
+.theme-brand .selectorSelected-2M0IGv{
+background: transparent;
+    margin-left: 10px;
+    transition: 1s;
+}
 /* misc */
 .guild-channels .channel-text.selected:before,
 .guild-channels .channel-text:hover.channel-muted:before,
