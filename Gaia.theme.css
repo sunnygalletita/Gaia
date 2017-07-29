@@ -213,7 +213,8 @@ text-align: center;
 .contentSelectedText-3j5CXt,
 .contentHoveredText-2HYGIY, 
 .contentHoveredVoice-3qGNKh:active, 
-.contentSelectedVoice-gTtYM9:active
+.contentSelectedVoice-gTtYM9:active,
+#user-profile-modal .empty
 {
  background: rgba(0,0,0,.3);   
 }
@@ -315,6 +316,94 @@ text-align: center;
 .private-channel-call,
 .ui-video{
  background: rgba(0,0,0,.5) !important;   
+}
+/* user modal */
+.body .member-roles{
+ max-height: 230px;
+ overflow-y: scroll;
+ background: rgba(0,0,0,.5);
+        
+}
+.body .member-roles::-webkit-scrollbar{
+background: rgba(255,255,255,.1);  
+}
+.avatar-profile .status{
+ border-color: transparent;
+ border-radius: 0px;
+    position: relative;
+        left: -45px;
+    top: -45px;
+    height: 90px;
+    width: 90px;
+    transform: rotate(45deg);
+}
+#user-profile-modal .avatar-wrapper{
+    position: absolute !important;
+    top: 0;
+    left: 0;
+}
+#user-profile-modal .actions .btn.add-friend{
+	font-size: 0px ;
+    background: white !important;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    background-position: 5px 18px;
+    fill: white !important;
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+    border-radius: 0px 100% 0px 0px;
+}
+#user-profile-modal .actions .btn.add-friend::before{
+ 	content: "+";
+    font-size: 90px;
+    color: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    left: 2px;
+    z-index: 10000;
+}
+#user-profile-modal .actions .btn.add-friend::after{
+ content: "Send Friend Request";
+    font-size: 13px;
+    text-align: center;
+    vertical-align: top;
+    color: transparent;
+    background: trasnparent;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    bottom: -15px;
+    left: 20px;
+    display: inline-block;
+    text-decoration:inherit;
+    transition: 1s;
+}
+#user-profile-modal .actions .btn.add-friend:hover::after{
+    width: 140px;
+ background: white;
+ content: "Send Friend Request" !important;
+ color: black !important;
+}
+#user-profile-modal .guilds .guild{
+ transition: 1s;   
+}
+#user-profile-modal .guilds .guild:hover{
+ background: transparent;
+ margin-left: 20px !important;
+}
+#user-profile-modal .tab-bar .tab-bar-item{
+    color: white !important;
+    border-bottom-color: white !important;
+    opacity: 0.6;
+}
+#user-profile-modal .tab-bar .tab-bar-item.selected{
+ opacity: 1;   
 }
 /* misc */
 .guild-channels .channel-text.selected:before,
