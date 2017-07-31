@@ -317,6 +317,46 @@ text-align: center;
 .ui-video{
  background: rgba(0,0,0,.5) !important;   
 }
+/* user list */
+.channel-members .member{
+    padding: 0;
+    transition: 1s;
+    border-radius: 0;
+    background: rgba(0,0,0,.5);
+}
+.channel-members .member .avatar-small{
+ border-radius: 0;
+    padding: 5px;
+    background-size: cover;
+}
+
+.theme-dark .channel-members .avatar-small .status,
+.theme-dark .channel-members .avatar-small .status .status-typing
+{
+ border: 0px;
+    border-radius: 0px;
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    transform: rotate(90deg);
+    width: 100px !important;
+    vertical-align: center;
+}
+.spinner{
+ display: none;
+}
+.channel-members .member .member-activity,
+.channel-members .member .member-username-inner{
+    margin-left: 4px
+}
+.theme-dark .channel-members h2{
+	margin: 0;
+    margin-top: 20px;
+    background: rgba(0,0,0,.7);
+}
+.message-group .comment .markup{
+color: red;
+}
 /* user modal */
 .body .member-roles{
  max-height: 230px;
